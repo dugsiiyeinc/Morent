@@ -3,9 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category Car</title>
+    <title>Welcome to MORENT</title>
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="nav-bar pc-device container">
+            <div class="right-nav-bar">
+            <div class="logo">
+                <h1 class="logo">MORENT</h1>
+            </div>
+        <div class="search-bar">
+            <div class="search">
+            <img src="/icons/search-bar.png" alt="search-bar-icon" class="search-icon">
+            <input type="text" placeholder="Search something here">
+            </div>
+            <img src="/icons/filter.png" alt="filter-icon" class="filter-pc">
+        </div>
+        </div>
+
+        <div class="left-nav-bar">
+            <i class="fa-solid fa-heart"></i>
+            <div class="notivication">
+                <span></span>
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <i class="fa-solid fa-gear"></i>
+            <div class="profile">
+                <img src="/images/profile-img.png" alt="profile-img" class="profile-pic">
+            </div>
+        </div>
+         </nav>
+         <!-- mobile device nav-bar -->
+        <nav class="nav-m-device">
+            <div class="logo-p-picture">
+                <i class="fa-solid fa-bars"></i>
+                <img src="/images/profile-img.png" >
+            </div>
+            <h1 class="logo">MORENT</h1>
+            <div class="search-bar-m-device">
+            <div class="search-m-device">
+            <img src="/icons/search-bar.png" alt="search-bar-icon">
+            <input type="text" placeholder="Search something here">
+            </div>
+            <img src="/icons/filter.png" alt="filter-icon" title="filter" class="filter">
+            </div>
+        </nav>
+    </header>
+<main>
+    <section class="left">
+        <div class="wrapper">
+            <!-- ===========Type====== -->
+            <div class="Type">
+                <h2>Type</h2>
+                <div class="Type-flex">
+                    <input type="checkbox" name="" id="type1" checked>
+                    <h1>Sport <span>(10)</span></h1>
+                </div>
+                <div class="Type-flex">
+                    <input type="checkbox" name="" id="type1" checked>
+                    <h1>SUV <span>(12)</span></h1>
+                </div>
+                <div class="Type-flex">
+                    <input type="checkbox" name="" id="type1" >
+                    <h1>MPV <span>(16)</span></h1>
+                </div>
+                <div class="Type-flex">
+                    <input type="checkbox" name="" id="type1" >
+                    <h1>Sedan <span>(20)</span></h1>
+                </div>
+                <div class="Type-flex">
+                    <input type="checkbox" name="" id="type1" >
+                    <h1>Cuope <span>(14)</span></h1>
+                </div>
+                <div class="Type-flex">
+                    <input type="checkbox" name="" id="type1" >
+                    <h1>Hatchbach <span>(14)</span></h1>
+                </div>
+            </div>
+            <!-- ===============capacity============== -->
+            <div class="Type">
+                <h2>capacity</h2>
+                <div class="Type-flex">
+                    <input type="checkbox" name="" id="type1" checked>
+                    <h1>2  Person<span>(10)</span></h1>
+                </div>
+                <div class="Type-flex">
+                    <input type="checkbox" name="" id="type1" >
+                    <h1>4  Person<span>(8)</span></h1>
+                </div>
+                <div class="Type-flex">
+                    <input type="checkbox" name="" id="type1" >
+                    <h1>6  Person<span>(12)</span></h1>
+                </div>
+                <div class="Type-flex">
+                    <input type="checkbox" name="" id="type1" checked>
+                    <h1>8  Person<span>(16)</span></h1>
+                </div>
+            </div>
+            <!-- ===============Range============== -->
+            <div class="Type">
+                <h2>Price</h2>
+                <div class="Range">
+                    <input type="range" id="volume" name="volume" min="0" max="180" step="1">
+                    <span id="">Max. $<span id="rangeValue"></span> </span>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section class="right">
+        <div class="bottom-hero"> 
+            <div class="pick-up-drop-off">
+                <div class="pick-up drop-off">
+                   <div class="mark-icon">
+                    <i class="fa-solid fa-circle"></i>
+                   </div>
+                    <span>Pick-Up</span>
+                </div>
+
+                <form class="pick-up-form  drop-off-form">
+                    <div class="location">
+                        <label for="location">locations</label>
+                        <select name="locations">
+                            <option value="Select location" hidden class="placeholder">Select your city</option>
+                            <option value="Mogadishu">Mogadishu</option>
+                            <option value="Hargaysa">Hargaysa</option>
+                            <option value="Kismaayo">Kismaayo</option>
+                            <option value="Goroowe">Goroowe</option>
+                            <option value="Boosaaso">Boosaaso</option>
+                            <option value="Gaalkacyo">Gaalkacyo</option>
+                            <option value="Marka">Marka</option>
+                            <option value="Afgooye">Afgooye</option>
+                            <option value="Boorama">Boorama</option>
+                            <option value="Jamaame">Jamaame</option>
+                            <option value="Beledwayne">Beledwayne</option>
+                            <option value="jowhar">Jowhar</option>
+                        </select>
+                    </div>
+
+                    <div class="location date">
+                        <label for="Date">Date</label>
+                        <input type="date" class="date-input">
+                       
+                    </div>
+
+                    <div class="location date time">
+                        <label for="Time">Time</label>
+                        <input type="time">
+                       
+                    </div>
+                </form>
+            </div>
+
+            <div class="switch">
+                    <i class="fa-solid fa-arrow-up-long"></i>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+            </div>
+
+
+                <!-- Drop Off -->
+            <div class="pick-up-drop-off">
+                <div class="pick-up drop-off">
+                   <div class="mark-icon mark-drop-off">
+                    <i class="fa-solid fa-circle"></i>
+                   </div>
+                    <span>Drop - Off</span>
+                </div>
+
+                <form class="pick-up-form  drop-off-form">
+                    <div class="location">
+                        <label for="location">locations</label>
+                        <select name="locations">
+                            <option value="Select location" hidden class="placeholder">Select your city</option>
+                            <option value="Mogadishu">Mogadishu</option>
+                            <option value="Hargaysa">Hargaysa</option>
+                            <option value="Kismaayo">Kismaayo</option>
+                            <option value="Goroowe">Goroowe</option>
+                            <option value="Boosaaso">Boosaaso</option>
+                            <option value="Gaalkacyo">Gaalkacyo</option>
+                            <option value="Marka">Marka</option>
+                            <option value="Afgooye">Afgooye</option>
+                            <option value="Boorama">Boorama</option>
+                            <option value="Jamaame">Jamaame</option>
+                            <option value="Beledwayne">Beledwayne</option>
+                            <option value="jowhar">Jowhar</option>
+                        </select>
+                    </div>
+
+                    <div class="location date">
+                        <label for="Date">Date</label>
+                        <input type="date" class="date-input">
+                       
+                    </div>
+
+                    <div class="location date time">
+                        <label for="Time">Time</label>
+                        <input type="time">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- =====================Cars=============== -->
+        <div class="Cars">
+
+        </div>
+    </section>
+</main>
+
+
+<script>
+    const rangeInput = document.getElementById('volume');
+    const rangeValue = document.getElementById('rangeValue');
+    rangeInput.addEventListener('input', (event) => {
+        rangeValue.textContent = event.target.value;
+        console.log('Current value:', event.target.value);
+    });
+</script>
 </body>
 </html>
