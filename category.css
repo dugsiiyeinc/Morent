@@ -432,15 +432,11 @@ main {
     max-width: 100%;
 
 }
-
-
-
 /* ===========================Section Two Cars=========================== */
 .Cars{
     margin-top: 2rem;
     display: flex;
     max-width: 100%;
-    /* /* align-items: start; */
     justify-content: center;
     flex-wrap: wrap;
     gap: 14px;
@@ -577,6 +573,36 @@ main {
     transition: 0.3s ease-in-out;
 }
 
+.Btn-More{
+    margin-top: 3rem;
+    /* max-width: 350px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+    flex-wrap: wrap;
+    /* position: relative; */
+}
+.more-btn{
+    padding: 10px 20px 10px 20px;
+    background-color: rgba(53, 99, 233, 1);
+    max-width: 156px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 2px;
+    max-height: 44px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+}
+.more-btn:hover{
+    background-color: #102E7A;
+    transition: 0.3s ease-in-out;
+}
+.total-cars{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(144, 163, 191, 1);
+}
 
 /* ====================================Media Querys For Responsive========================== */
 
@@ -639,4 +665,102 @@ main {
     .date input {
         font-size: 1rem;
     }
+    
+}
+
+/* ========================End Main Stylings======================== */
+
+
+/* ===============================Footer Section ===================== */
+
+/* Footer */
+footer{
+    background-color: #FFFFFF;
+    padding: 4rem;
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer-section .upper-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border-bottom: 2px solid rgba(19, 19, 19, 0.16);
+    padding-bottom: 2rem;
+}
+.upper-footer .footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-logo .logo{
+    font-size: clamp(0.8rem, 8vw, 2rem);
+}
+.footer-logo p{
+    font-size: 16px;
+    color: rgba(19, 19, 19, 0.6);
+}
+
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.footer-links .links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.links p {
+    font-size: 1rem;
+    font-weight: 580;
+    color: #1A202C;
+}
+.links a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgba(19, 19, 19, 0.6);
+}
+.links a:hover{
+    color: #1A202C;
+    transition: 0.3s ease-in-out;
+}
+
+/* Copyright-section */
+.copyright-section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.copyright-section p{
+    color: #1A202C;
+    font-weight: 700;
+    font-size: clamp(0.7rem, 4vw, 1rem);
+}
+
+.copyright-section .privacy-terms{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+.privacy-terms a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #1A202C;
+    font-weight: 600;
+}
+.privacy-terms a:hover{
+    color: #102E7A;
+    transition: 0.3s ease-in-out;
 }
