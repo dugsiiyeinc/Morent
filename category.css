@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,29 +9,35 @@
     text-decoration: none;
     list-style: none;
 }
-body{
+
+body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
-img{
+
+img {
     max-width: 100%;
 }
-.container{
-    width: 90%;
+
+.container {
+    width: 100%;
     margin: 0 auto;
     max-width: 1536px;
     margin-inline: auto;
 }
-header{
+
+header {
     background-color: #FFFFFF;
     padding: 1rem;
-    border-bottom:  1px solid rgba(195, 212, 233, 0.4);
+    border-bottom: 1px solid rgba(195, 212, 233, 0.4);
 }
-.nav-bar{
+
+.nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
 }
+
 .nav-bar .right-nav-bar {
     width: 60%;
     display: flex;
@@ -38,12 +45,14 @@ header{
     justify-content: space-between;
     gap: 4rem;
 }
-.logo{
+
+.logo {
     color: #3563E9;
     font-size: 2rem;
     font-weight: 700;
 }
-.right-nav-bar .search-bar{
+
+.right-nav-bar .search-bar {
     width: 100%;
     display: flex;
     align-items: center;
@@ -52,16 +61,19 @@ header{
     border-radius: 70px;
     padding: 0.3rem 1rem;
 }
-.search-bar .search{
+
+.search-bar .search {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.7rem;
 }
-.search .search-icon{
+
+.search .search-icon {
     width: 1.1rem;
 }
-.search input{
+
+.search input {
     width: 100%;
     outline: none;
     border: none;
@@ -69,15 +81,18 @@ header{
     color: #0D121F;
     padding-left: 0.8rem;
 }
-.search-bar .filter-pc{
+
+.search-bar .filter-pc {
     width: 1.2rem;
 }
-.nav-bar .left-nav-bar{
+
+.nav-bar .left-nav-bar {
     display: flex;
     align-items: center;
     gap: 1.2rem;
 }
-.left-nav-bar i{
+
+.left-nav-bar i {
     font-size: 1.1rem;
     background-color: #FFFFFF;
     border: 1px solid rgba(195, 212, 233, 0.4);
@@ -86,10 +101,12 @@ header{
     color: #596780;
     cursor: pointer;
 }
-.notivication{
+
+.notivication {
     position: relative;
 }
-.notivication span{
+
+.notivication span {
     position: absolute;
     top: 0;
     right: -0.1px;
@@ -97,39 +114,45 @@ header{
     padding: 0.23rem;
     border-radius: 60%;
 }
-.fa-heart:hover{
+
+.fa-heart:hover {
     color: #FF4423;
 }
-.profile-pic{
+
+.profile-pic {
     width: 2rem;
 }
 
 
 /* mobile and tablet device nav-bar */
-.nav-m-device{
+.nav-m-device {
     width: 100%;
     display: none;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
 }
-.fa-bars{
+
+.fa-bars {
     font-size: 24px;
     color: #596780;
 }
-.nav-m-device .logo-p-picture{
+
+.nav-m-device .logo-p-picture {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.search-bar-m-device{
+
+.search-bar-m-device {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.search-bar-m-device .search-m-device{
+
+.search-bar-m-device .search-m-device {
     width: 80%;
     display: flex;
     align-items: center;
@@ -138,17 +161,20 @@ header{
     border-radius: 10px;
     padding: 1rem 2rem;
 }
-.search-m-device input{
+
+.search-m-device input {
     width: 100%;
     outline: none;
     border: none;
     font-size: 1rem;
     color: #596780;
 }
-.search-bar-m-device input::placeholder{
+
+.search-bar-m-device input::placeholder {
     color: #596780;
 }
-.search-bar-m-device .filter{
+
+.search-bar-m-device .filter {
     border: 2px solid rgba(195, 212, 233, 0.4);
     padding: 1rem;
     border-radius: 10px;
@@ -158,17 +184,20 @@ header{
 
 /* responsive design */
 /* tablets and laptops */
-@media (max-width : 850px){
-    .pc-device{
+@media (max-width : 850px) {
+    .pc-device {
         display: none;
     }
-    .nav-m-device{
+
+    .nav-m-device {
         display: flex;
     }
-    .search-bar-m-device .search-m-device{
+
+    .search-bar-m-device .search-m-device {
         width: 85%;
     }
-    header{
+
+    header {
         padding: 0;
     }
 }
@@ -177,19 +206,20 @@ header{
 /* ================================================ */
 /* Main styling  */
 
-main{
+main {
     background-color: #F6F7F9;
     display: flex;
-    width: 100%;
     /* position: relative; */
 }
-.left{
+
+.left {
     width: 360px;
     background-color: #FFFFFF;
-    max-height:1600px;
+    height: 1600px;
     padding: 1rem;
     border-right: 1px solid #F3F5F7;
 }
+
 .left .wrapper {
     width: 100%;
     display: flex;
@@ -197,13 +227,15 @@ main{
     gap: 5rem;
     padding: 1rem;
 }
-.Type{
+
+.Type {
     display: flex;
     flex-direction: column;
     gap: 28px;
     align-items: start;
 }
-.Type h2{
+
+.Type h2 {
     font-size: 12px;
     color: rgba(144, 163, 191, 1);
     letter-spacing: 2px;
@@ -211,17 +243,19 @@ main{
     font-weight: 600;
 }
 
-.Type-flex{
+.Type-flex {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
 }
-.Type-flex input[type="checkbox"]{
+
+.Type-flex input[type="checkbox"] {
     width: 24px;
     height: 24px;
 }
-.Type-flex h1{
+
+.Type-flex h1 {
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -230,16 +264,19 @@ main{
     color: rgb(69, 72, 78);
     font: bold;
 }
-.Type-flex h1 span{
+
+.Type-flex h1 span {
     color: rgba(144, 163, 191, 1);
 }
-.Range{
+
+.Range {
     display: flex;
     flex-direction: column;
     gap: 28px;
     /* align-items: start; */
 }
-.Range input[type="range"]{
+
+.Range input[type="range"] {
     height: 12px;
     border: 4px solid rgba(255, 255, 255, 1);
     background-color: rgba(255, 255, 255, 1);
@@ -247,29 +284,30 @@ main{
     /* color: rgba(53, 99, 233, 1); */
 }
 
-.Range>span{
+.Range>span {
     font-size: 20px;
     color: rgba(89, 103, 128, 1);
     font-weight: 600;
     letter-spacing: 2px;
 }
+
 /* =================Main Right ================== */
-.right{
-    /* width: calc(100vw - 360px); */
+.right {
     width: 100%;
-    /* background-color: red; */
-    /* height: 100vh; */
+    margin: 0 auto;
     padding: 1.7rem;
     margin-top: 2rem;
 }
-/* pick Up and Drop Off section*/
-.bottom-hero{
+
+/* ===============================pick Up and Drop Off section One=================*/
+.bottom-hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1.2rem;
 }
-.pick-up-drop-off{
+
+.pick-up-drop-off {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -279,12 +317,14 @@ main{
     padding: 1.5rem;
     border-radius: 10px;
 }
-.pick-up{
+
+.pick-up {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-.pick-up .mark-icon{
+
+.pick-up .mark-icon {
     background-color: rgba(53, 99, 233, 0.40);
     border-radius: 50px;
     display: flex;
@@ -292,17 +332,19 @@ main{
     justify-content: center;
     padding: 0.3rem;
 }
-.mark-icon i{
+
+.mark-icon i {
     color: #3563E9;
     font-size: 0.5rem;
 }
-.pick-up span{
+
+.pick-up span {
     font-size: 1rem;
     color: #1A202C;
     font-weight: 550;
 }
 
-.pick-up-form{
+.pick-up-form {
     width: 100%;
     display: flex;
     align-items: center;
@@ -310,19 +352,21 @@ main{
     gap: 1rem;
 }
 
-.location{
+.location {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
-.location label{
+
+.location label {
     font-size: 1.1rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 700;
     color: #1A202C;
 }
-.location select{
+
+.location select {
     outline: none;
     border: none;
     padding: 0rem 1rem 0px 0rem;
@@ -330,19 +374,21 @@ main{
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1rem;
 }
-.location select option{
+
+.location select option {
     color: #1A202C;
     font-weight: 550;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1rem;
 }
 
-.date{
+.date {
     max-width: 100%;
     border-left: 1px solid #C3D4E9;
     padding-left: 1rem;
 }
-.date input{
+
+.date input {
     outline: none;
     border: none;
     padding: 0rem 1rem 0px 0rem;
@@ -351,7 +397,7 @@ main{
     font-size: 1rem;
 }
 
-.switch{
+.switch {
     padding: 1rem 0.8rem;
     background-color: #3563E9;
     border-radius: 8px;
@@ -359,84 +405,238 @@ main{
     display: flex;
     align-items: center;
 }
-.switch:hover{
+
+.switch:hover {
     background-color: #102E7A;
     transition: 0.3s ease-in-out;
 }
 
-.switch i{
+.switch i {
     color: #FFFFFF;
     font-size: 1rem;
 }
 
 
 /* dropp-off */
-.pick-up .mark-drop-off{
+.pick-up .mark-drop-off {
     background-color: rgba(84, 166, 255, 0.30);
 }
-.mark-drop-off i{
+
+.mark-drop-off i {
     color: #54A6FF;
 }
-.drop-off-form{
-     display: flex;
-     flex-wrap: wrap;
+
+.drop-off-form {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
-        
+
 }
 
-/* =========================MediaQueries ================================================================= */
-@media (max-width: 850px){
-    .left{
+
+
+/* ===========================Section Two Cars=========================== */
+.Cars{
+    margin-top: 2rem;
+    display: flex;
+    max-width: 100%;
+    /* /* align-items: start; */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.car-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px rgba(195, 212, 233, 0.40);
+    max-width: 304px;
+    height: 100%;
+}
+
+.car-box .top-car-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.top-car-box .title-favorite-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-favorite-icon h4{
+    font-size: 1.3rem;
+    color: #1A202C;
+    font-weight: bold;
+}
+.title-favorite-icon .favorite-icon{
+    font-size: 1.5rem;
+    color: #FF4423;
+    cursor: pointer;
+}
+.title-favorite-icon .favorite-icon:hover{
+    color: #596780;
+    transition: all 0.3s ease-in-out;
+}
+.title-favorite-icon .wishlist{
+    color: #596780;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.wishlist:hover{
+    color: #FF4423;
+    transition: 0.3s ease-in-out;
+}
+.top-car-box span{
+    color: #90A3BF;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+.car-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 252px;
+    max-height: 112px;
+    padding-top: 4rem;
+}
+
+/* car description */
+.car-description{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+.car-description .petrol, .car-transmission, .car-capacity{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.car-description .petrol span, .car-transmission span, .car-capacity span, i{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #90A3BF;
+}
+
+
+/* price-rental-bt  section*/
+.price-rental-btn{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-rental-btn .price{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.car-price{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1A202C;
+}
+.price-rental-btn .day{
+    color: #90A3BF;
+    font-weight: 550;
+}
+
+.old-price{
+    text-decoration: line-through;
+    font-size: 1rem;
+    font-weight: 550;
+    color: #90A3BF;
+}
+
+.rental-car{
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    background-color: #3563E9;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.rental-car:hover{
+    background-color: #102E7A;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* ====================================Media Querys For Responsive========================== */
+
+@media (max-width: 850px) {
+    .left {
         display: none;
     }
-    .right{
+
+    .right {
         padding: 2rem;
     }
+
     /* tablets */
-.bottom-hero{
-    flex-direction: column;
-    gap: 1rem;
-}
-.pick-up-drop-off{
-    width: 100%;
-}
+    .bottom-hero {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .pick-up-drop-off {
+        width: 100%;
+    }
 
 
-/* phone */
-.bottom-hero{
-    width: 100%;
-    flex-direction: column;
-    gap: 1rem;
-}
-.pick-up-drop-off{
-    width: 100%;
-    padding: 1.5rem 1rem;
-}
-.pick-up-form{
-    width: 100%;
-    align-items: self-start;
-    gap: 1rem;
-}
-.location{
-    width: 100%;
-    flex-direction: column;
-}
-.location select{
-    width: 100%;
-}
-.location select option{
-    font-size: 0.8rem;
-}
+    /* phone */
+    .bottom-hero {
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-.date{
-    border-left: none;
-    padding-left: 0rem;
+    .pick-up-drop-off {
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+
+    .pick-up-form {
+        width: 100%;
+        align-items: self-start;
+        gap: 1rem;
+    }
+
+    .location {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .location select {
+        width: 100%;
+    }
+
+    .location select option {
+        font-size: 0.8rem;
+    }
+
+    .date {
+        border-left: none;
+        padding-left: 0rem;
+    }
+
+    .date input {
+        font-size: 1rem;
+    }
 }
-.date input{
-font-size: 1rem;
-}
-}
-
-
-
-
