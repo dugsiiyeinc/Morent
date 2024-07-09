@@ -1,72 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morent - Car Rental</title>
     <link rel="stylesheet" href="car-details.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="nav-bar pc-device container">
-        <div class="right-nav-bar">
-          <div class="logo">
-            <h1 class="logo">MORENT</h1>
-          </div>
-          <div class="search-bar">
-            <div class="search">
-              <img
-                src="/icons/search-bar.png"
-                alt="search-bar-icon"
-                class="search-icon"
-              />
-              <input type="text" placeholder="Search something here" />
-            </div>
-            <img src="/icons/filter.png" alt="filter-icon" class="filter-pc" />
-          </div>
-        </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
 
-        <div class="left-nav-bar">
-          <i class="fa-solid fa-heart"></i>
-          <div class="notivication">
-            <span></span>
-            <i class="fa-solid fa-bell"></i>
-          </div>
-          <i class="fa-solid fa-gear"></i>
-          <div class="profile">
-            <img
-              src="/images/profile-img.png"
-              alt="profile-img"
-              class="profile-pic"
-            />
-          </div>
-        </div>
-      </nav>
-      <!-- mobile device nav-bar -->
-      <nav class="nav-m-device">
-        <div class="logo-p-picture">
-          <i class="fa-solid fa-bars"></i>
-          <img src="/images/profile-img.png" />
-        </div>
-        <h1 class="logo">MORENT</h1>
-        <div class="search-bar-m-device">
-          <div class="search-m-device">
-            <img src="/icons/search-bar.png" alt="search-bar-icon" />
-            <input type="text" placeholder="Search something here" />
-          </div>
-          <img
-            src="/icons/filter.png"
-            alt="filter-icon"
-            title="filter"
-            class="filter"
-          />
-        </div>
-      </nav>
+<body>
+    <header>
+        <nav class="nav-bar pc-device container">
+            <div class="right-nav-bar">
+                <div class="logo">
+                    <h1 class="logo">MORENT</h1>
+                </div>
+                <div class="search-bar">
+                    <div class="search">
+                        <img src="/icons/search-bar.png" alt="search-bar-icon" class="search-icon" />
+                        <input type="text" placeholder="Search something here" />
+                    </div>
+                    <img src="/icons/filter.png" alt="filter-icon" class="filter-pc" />
+                </div>
+            </div>
+
+            <div class="left-nav-bar">
+                <i class="fa-solid fa-heart"></i>
+                <div class="notivication">
+                    <span></span>
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <i class="fa-solid fa-gear"></i>
+                <div class="profile">
+                    <img src="/images/profile-img.png" alt="profile-img" class="profile-pic" />
+                </div>
+            </div>
+        </nav>
+        <!-- mobile device nav-bar -->
+        <nav class="nav-m-device">
+            <div class="logo-p-picture">
+                <i class="fa-solid fa-bars"></i>
+                <img src="/images/profile-img.png" />
+            </div>
+            <h1 class="logo">MORENT</h1>
+            <div class="search-bar-m-device">
+                <div class="search-m-device">
+                    <img src="/icons/search-bar.png" alt="search-bar-icon" />
+                    <input type="text" placeholder="Search something here" />
+                </div>
+                <img src="/icons/filter.png" alt="filter-icon" title="filter" class="filter" />
+            </div>
+        </nav>
     </header>
-  </body>
+    <!-- ==========Main Bart of the Website ============ -->
+
+    <main class="container">
+        <!-- =========================Left Section======================== -->
+        <section class="left">
+            <div class="wrapper">
+                <!-- ===========Type====== -->
+                <div class="Type">
+                    <h2>Type</h2>
+                    <div class="Type-flex">
+                        <input type="checkbox" name="" id="type1" checked>
+                        <h1>Sport <span>(10)</span></h1>
+                    </div>
+                    <div class="Type-flex">
+                        <input type="checkbox" name="" id="type1" checked>
+                        <h1>SUV <span>(12)</span></h1>
+                    </div>
+                    <div class="Type-flex">
+                        <input type="checkbox" name="" id="type1">
+                        <h1>MPV <span>(16)</span></h1>
+                    </div>
+                    <div class="Type-flex">
+                        <input type="checkbox" name="" id="type1">
+                        <h1>Sedan <span>(20)</span></h1>
+                    </div>
+                    <div class="Type-flex">
+                        <input type="checkbox" name="" id="type1">
+                        <h1>Cuope <span>(14)</span></h1>
+                    </div>
+                    <div class="Type-flex">
+                        <input type="checkbox" name="" id="type1">
+                        <h1>Hatchbach <span>(14)</span></h1>
+                    </div>
+                </div>
+                <!-- ===============capacity============== -->
+                <div class="Type">
+                    <h2>capacity</h2>
+                    <div class="Type-flex">
+                        <input type="checkbox" name="" id="type1" checked>
+                        <h1>2 Person<span>(10)</span></h1>
+                    </div>
+                    <div class="Type-flex">
+                        <input type="checkbox" name="" id="type1">
+                        <h1>4 Person<span>(8)</span></h1>
+                    </div>
+                    <div class="Type-flex">
+                        <input type="checkbox" name="" id="type1">
+                        <h1>6 Person<span>(12)</span></h1>
+                    </div>
+                    <div class="Type-flex">
+                        <input type="checkbox" name="" id="type1" checked>
+                        <h1>8 Person<span>(16)</span></h1>
+                    </div>
+                </div>
+                <!-- ===============Range============== -->
+                <div class="Type">
+                    <h2>Price</h2>
+                    <div class="Range">
+                        <input type="range" id="volume" name="volume" min="0" max="180" step="1">
+                        <span id="">Max. $<span id="rangeValue"></span> </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================End Left Section======================== -->
+
+        <!-- =========================Right Section======================== -->
+        <section class="right">
+            <div class="wrapper">
+                <div class="Left-Card">
+                    <div class="card-img">
+                        <img src="/images/BG.png" alt="" class="img2">
+                        <div class="card-text">
+                            <h2>Sports car with the best design and acceleration</h2>
+                            <p>Safety and comfort while driving a
+                                futuristic and elegant sports car</p>
+                        </div>
+                    </div>
+                    <div class="cars-view">
+                        <img src="images/View 1.png" alt="">
+                        <img src="images/View 2.png" alt="">
+                        <img src="images/View 3.png" alt="">
+                    </div>
+                </div>
+                <!-- ==================Right card================== -->
+                <div class="right-card">
+                    <!-- ===============Top Right Card================== -->
+                    <div class="top-righ-card">
+                        <div class="top-flex">
+                            <h1>Nissan GT - R </h1>
+                            <i class="fa-solid fa-heart favorite-icon "></i>
+                        </div>
+                        <div class="Stars-flex">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+
+                            </div>
+                            <p>440+ Reviewer</p>
+                        </div>
+                    </div>
+                    <!-- =============Bottom Right Card ============= -->
+                    <div class="bottom-right-card">
+                        <p>NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most
+                            unforgiving proving ground, the "race track".</p>
+                        <di class="details-car">
+                            <div class="types-flex1">
+                                <div class="types-flex2">
+                                    <h4>Type Car</h4>
+                                    <p>Sport</p>
+                                </div>
+                                <div class="types-flex2">
+                                    <h4>Steering </h4>
+                                    <p>Manual</p>
+                                </div>
+                            </div>
+                            <div class="types-flex1">
+                                <div class="types-flex2">
+                                    <h4>Capacity</h4>
+                                    <p>2 Person</p>
+                                </div>
+                                <div class="types-flex2">
+                                    <h4>Gasoline </h4>
+                                    <p>70L</p>
+                                </div>
+                            </div>
+                        </di>
+                        <!-- car price -->
+                        <div class="price-rental-btn card-2">
+                            <div class="price">
+                                <span class="car-price">$80.00/ <span class="day">day</span></span>
+                                <p class="old-price">$100.00</p>
+                            </div>
+
+                            <button class="rental-car">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =========================End Right Section======================== -->
+
+            <div class="Reviews">
+                <div class="top-reviews">
+                <h4>Reviews</h4>
+                <button>13</button>
+            </div>
+            <div class="reviews-person">
+                <div class="review-flex">
+                    <img src="/images/profile-img.png" alt="">
+                    <div class="person-details">
+                        <h4>Alex Stanton</h4>
+                        <h2>CEO at Bukalapak</h2>
+                    </div>
+                </div>
+                <div class="person-rate">
+                    <p>21 July 2022</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            </div>
+            <p class="person-description">We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+            <div class="reviews-person">
+                <div class="review-flex">
+                    <img src="/images/Person2.png" alt="">
+                    <div class="person-details">
+                        <h4>Skylar Dias</h4>
+                        <h2>CEO at Amazon</h2>
+                    </div>
+                </div>
+                <div class="person-rate">
+                    <p>20 July 2022</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            </div>
+            <p class="person-description">We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+
+            <div class="show-all">
+                <p>Show All</p>
+                <img src="images/arrow-down.png" alt="">
+            </div>
+
+            </div>
+            <!-- =========================End Reviewers List======================== -->
+
+
+            <div class="Cars">
+                <!--Koenigsegg Car One -->
+                <div class="car-box">
+                    <div class="top-car-box">
+                        <div class="title-favorite-icon">
+                            <h4>Koenigsegg</h4>
+                            <i class="fa-solid fa-heart favorite-icon "></i>
+                        </div>
+                        <span class="car-type">Sport</span>
+                    </div>
+    
+                    <div class="car-img">
+                        <img src="/images/Car1.png" alt="car-image">
+                    </div>
+    
+                    <div class="car-description">
+                        <div class="petrol">
+                            <i class="fa-solid fa-gas-pump"></i>
+                            <span>90L</span>
+                        </div>
+                        <div class="car-transmission">
+                            <img src="/icons/Stering.png" alt="steering wheel">
+                            <span>Manual</span>
+                        </div>
+                        <div class="car-capacity">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>2 people</span>
+                        </div>
+                    </div>
+    
+                    <div class="price-rental-btn">
+                            <span class="car-price">$99.00/ <span class="day">day</span></span>
+    
+                            <button class="rental-car">Rent Now</button>
+                    </div>
+                </div>
+    
+            <!-- =======================Card 2 ===================== -->
+            <div class="car-box">
+                <div class="top-car-box">
+                    <div class="title-favorite-icon">
+                        <h4>Nissan GT - R</h4>
+                        <i class="fa-solid fa-heart wishlist"></i>
+                    </div>
+                    <span class="car-type">Sport</span>
+                </div>
+                    <!-- car image -->
+                <div class="car-img">
+                    <img src="/images/CR - V.png" alt="car-image">
+                </div>
+                <!-- car description -->
+                <div class="car-description">
+                    <div class="petrol">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <span>80L</span>
+                    </div>
+                    <div class="car-transmission">
+                        <img src="/icons/Stering.png" alt="steering wheel">
+                        <span>Manual</span>
+                    </div>
+                    <div class="car-capacity">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>2 people</span>
+                    </div>
+                </div>
+                <!-- car price -->
+                <div class="price-rental-btn card-2">
+                        <div class="price">
+                        <span class="car-price">$80.00/ <span class="day">day</span></span>
+                        <p class="old-price">$100.00</p>
+                        </div>
+    
+                        <button class="rental-car">Rent Now</button>
+                </div>
+            </div>
+    
+            <!-- =======================Card 3 ===================== -->
+            <div class="car-box" >
+                <div class="top-car-box">
+                    <div class="title-favorite-icon">
+                        <h4>Rolls-Royce</h4>
+                        <i class="fa-solid fa-heart favorite-icon "></i>
+                    </div>
+                    <span class="car-type">Sport</span>
+                </div>
+    
+                <div class="car-img">
+                    <img src="/images/Rolls-Royce.png" alt="car-image">
+                </div>
+    
+                <div class="car-description">
+                    <div class="petrol">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <span>96L</span>
+                    </div>
+                    <div class="car-transmission">
+                        <img src="/icons/Stering.png" alt="steering wheel">
+                        <span>Manual</span>
+                    </div>
+                    <div class="car-capacity">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>4 people</span>
+                    </div>
+                </div>
+    
+                <div class="price-rental-btn">
+                        <span class="car-price">$70.00/ <span class="day">day</span></span>
+    
+                        <button class="rental-car">Rent Now</button>
+                </div>
+            </div>
+    
+            <!-- =======================Card 4 ===================== -->
+            <div class="car-box">
+                <div class="top-car-box">
+                    <div class="title-favorite-icon">
+                        <h4>All New Rush</h4>
+                        <i class="fa-solid fa-heart wishlist"></i>
+                    </div>
+                    <span class="car-type">SUV</span>
+                </div>
+                    <!-- car image -->
+                <div class="car-img">
+                    <img src="/images/All New Rush.png" alt="car-image">
+                </div>
+                <!-- car description -->
+                <div class="car-description">
+                    <div class="petrol">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <span>70L</span>
+                    </div>
+                    <div class="car-transmission">
+                        <img src="/icons/Stering.png" alt="steering wheel">
+                        <span>Manual</span>
+                    </div>
+                    <div class="car-capacity">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>6 people</span>
+                    </div>
+                </div>
+                <!-- car price -->
+                <div class="price-rental-btn card-2">
+                        <div class="price">
+                        <span class="car-price">$72.00/ <span class="day">day</span></span>
+                        <p class="old-price">$80.00</p>
+                        </div>
+    
+                        <button class="rental-car">Rent Now</button>
+                </div>
+            </div>
+    
+            <!-- =======================Card 5 ===================== -->
+    
+            <div class="car-box" >
+                <div class="top-car-box">
+                    <div class="title-favorite-icon">
+                        <h4>Rolls-Royce</h4>
+                        <i class="fa-solid fa-heart favorite-icon "></i>
+                    </div>
+                    <span class="car-type">Sport</span>
+                </div>
+    
+                <div class="car-img">
+                    <img src="/images/All New Teres.png" alt="car-image">
+                </div>
+    
+                <div class="car-description">
+                    <div class="petrol">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <span>90L</span>
+                    </div>
+                    <div class="car-transmission">
+                        <img src="/icons/Stering.png" alt="steering wheel">
+                        <span>Manual</span>
+                    </div>
+                    <div class="car-capacity">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>6 people</span>
+                    </div>
+                </div>
+    
+                <div class="price-rental-btn">
+                        <span class="car-price">$74.00/ <span class="day">day</span></span>
+    
+                        <button class="rental-car">Rent Now</button>
+                </div>
+            </div>
+    
+            <!-- =======================Card 6 ===================== -->
+    
+            <div class="car-box">
+                <div class="top-car-box">
+                    <div class="title-favorite-icon">
+                        <h4>MG ZX Exclusice</h4>
+                        <i class="fa-solid fa-heart wishlist"></i>
+                    </div>
+                    <span class="car-type">Hatchback</span>
+                </div>
+                    <!-- car image -->
+                <div class="car-img">
+                    <img src="/images/MG ZX Exclusice.png" alt="car-image">
+                </div>
+                <!-- car description -->
+                <div class="car-description">
+                    <div class="petrol">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <span>70L</span>
+                    </div>
+                    <div class="car-transmission">
+                        <img src="/icons/Stering.png" alt="steering wheel" >
+                        <span>Electric</span>
+                    </div>
+                    <div class="car-capacity">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>4 people</span>
+                    </div>
+                </div>
+                <!-- car price -->
+                <div class="price-rental-btn card-2">
+                        <div class="price">
+                        <span class="car-price">$76.00/ <span class="day">day</span></span>
+                        <p class="old-price">$80.00</p>
+                        </div>
+    
+                        <button class="rental-car">Rent Now</button>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- ========================End of The Main Content==================== -->
+
+    <!-- ==============================Footer Section============================== -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-section inside-container">
+                <div class="upper-footer">
+                <div class="footer-logo">
+                    <h1 class="logo">MORENT</h1>
+                    <P>Our vision is to provide convenience<br> and help increase your sales business.</P>
+                </div>
+
+                <div class="footer-links">
+                    <!-- about links -->
+                    <div class="links">
+                        <p>About</p>
+                        <a href="#">How it works</a>
+                        <a href="#">Featured</a>
+                        <a href="#">Partnership</a>
+                        <a href="#">Business Relation</a>
+                    </div>
+                    <!-- Community links -->
+                    <div class="links">
+                        <p>Community</p>
+                        <a href="#">Events</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Podcast</a>
+                        <a href="#">Invite a friend</a>
+                    </div>
+
+                    <!-- Socials -->
+                     <div class="links">
+                        <p>Socials</p>
+                        <a href="#">Socials</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">X</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="copyright-section">
+                    <p>&copy; 2024 MORENT. All rights reserved.</p>
+                    <div class="privacy-terms">
+                        <a href="#">Privacy & Policy</a>
+                        <a href="#">Terms & Condition</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     </footer>
+
+<script src="main.js"></script>
+</body>
+
 </html>
-'
