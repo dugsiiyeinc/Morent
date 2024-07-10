@@ -105,6 +105,24 @@ form .top-form{
     font-size: 0.8rem;
     color: #1A202C;
 }
+
+.remember-forget-password{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.remember-forget-password .remeber-me{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.remember-forget-password .forget-password a{
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.remember-forget-password .forget-password a:hover{
+    color: #3563E9;
+}
 .form-group .signUp{
     text-decoration: none;
     background-color: #3563E9;
@@ -118,6 +136,13 @@ form .top-form{
 .form-group .signUp:hover{
     background-color: rgba(35, 79, 208, 1);
     transition: 0.3s ease-in-out;
+}
+.form-group .create-new-acco{
+    padding-top: 10px;
+    text-align: center;
+}
+.create-new-acco a{
+    color: #3563E9;
 }
 
 /* responsive design */
