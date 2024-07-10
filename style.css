@@ -36,6 +36,7 @@ header{
     gap: 4rem;
 }
 .logo{
+    text-decoration: none;
     color: #3563E9;
     font-size: 2rem;
     font-weight: 700;
