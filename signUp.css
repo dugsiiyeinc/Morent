@@ -41,11 +41,9 @@ form .top-form{
     color: #3563E9;
     font-size: 2rem;
     font-weight: 700;
+    padding-bottom: 1rem;
 }
-.top-form h2{
-    font-weight: normal;
-    font-size: 1rem;
-}
+
 .form-container form .form-group{
     display: flex;
     flex-direction: column;
@@ -65,7 +63,8 @@ form .top-form{
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: rgba(26, 32, 44, 0.1);
+    background-color: rgb(246, 247, 249);
+    border: 0.5px solid rgba(144, 163, 191, 0.3);
     border-radius: 5px;
     font-size: 0.8rem;
     position: relative;
@@ -83,8 +82,12 @@ form .top-form{
     background-color: transparent;
     border-radius: 5px;
     font-size: 0.8rem;
+    font-weight: 550;
     padding: 0.8rem 2.5rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.input-label .input-icon input::placeholder{
+    font-weight: normal;
 }
 
 .input-label .input-icon input:focus{
