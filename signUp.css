@@ -172,15 +172,22 @@ form .top-form{
 /* responsive design */
 /* tablets and laptops */
 @media only screen and (min-width : 768px) and (max-width : 1024px){
+    .container{
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+    .form-container{
+        width: 70%;
+    }
 }
 /* mobile devices */
 @media (max-width: 767px){
     .container{
-        flex-direction: column;
         padding: 0rem;
+        margin: 1rem auto;
     }
-    .car-image{
-        display: none;
+    .form-container{
+        width: 100%;
     }
     .form-container form{
         padding: 1rem;
