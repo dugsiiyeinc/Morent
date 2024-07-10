@@ -98,20 +98,9 @@ header{
 .fa-heart:hover{
     color: #FF4423;
 }
-/* .profile-pic{
+.profile-pic{
     width: 2rem;
-} */
-/* .singup{
-    text-decoration: none;
-    background-color: #3563E9;
-    border-radius: 8px;
-    text-align: center;
-    padding: 0.5rem 1rem;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 1rem;
-} */
-
+}
 
 /* mobile and tablet device nav-bar */
 .nav-m-device{
@@ -127,15 +116,7 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.logo-p-picture a i{
-    font-size: 1.7rem;
-    background-color: #FFFFFF;
-    border: 1px solid rgba(195, 212, 233, 0.4);
-    padding: 0.5rem;
-    border-radius: 50px;
-    color: #596780;
-    cursor: pointer;
-}
+
 .search-bar-m-device{
     width: 100%;
     display: flex;
