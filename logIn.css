@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F6F7F9;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1536px;
+    padding: 2rem;
+}
+.form-container{
+    width: 40%;
+    margin: 0 auto;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 2px rgba(26, 32, 44, 0.1);
+    border-radius: 10px;
+}
+form .top-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.top-form .logo{
+    text-decoration: none;
+    color: #3563E9;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.form-container form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-group .input-label{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.form-group .input-label label{
+    font-size: 1rem;
+    color: #1A202C;
+}
+.input-label .input-icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgb(246, 247, 249);
+    border: 0.5px solid rgba(144, 163, 191, 0.3);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    position: relative;
+} 
+.input-label .input-icon .fa-user-plus,.fa-circle-user,.fa-envelope,.fa-lock{
+    position: absolute;
+    left: 12px;
+    font-size: 1.1rem;
+    color: #1A202C;
+}
+.input-label .input-icon input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 550;
+    padding: 0.8rem 2.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.input-label .input-icon input::placeholder{
+    font-weight: normal;
+}
+
+.input-label .input-icon input:focus{
+    border: 1px solid rgba(53, 99, 233, 0.3);
+}
+
+
+.input-label .input-icon .fa-eye-slash{
+    position: absolute;
+    right: 12px;
+    font-size: 1.1rem;
+    color: #1A202C;
+    cursor: pointer;
+}
+.password-info{
+    font-size: 0.8rem;
+    color: #1A202C;
+}
+
+.remember-forget-password{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.remember-forget-password .remeber-me{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.remember-forget-password .forget-password a{
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.remember-forget-password .forget-password a:hover{
+    color: #3563E9;
+}
+.form-group .signUp{
+    text-decoration: none;
+    background-color: #3563E9;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.form-group .signUp:hover{
+    background-color: rgba(35, 79, 208, 1);
+    transition: 0.3s ease-in-out;
+}
+.form-group .create-new-acco{
+    padding-top: 10px;
+    text-align: center;
+}
+.create-new-acco a{
+    color: #3563E9;
+}
+
+/* responsive design */
+/* tablets and laptops */
+@media only screen and (min-width : 768px) and (max-width : 1024px){
+    .container{
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+    .form-container{
+        width: 70%;
+    }
+}
+
+/* mobile devices */
+@media (max-width: 767px){
+    .container{
+        padding: 0rem;
+        margin: 3rem auto;
+    }
+    .form-container{
+        width: 100%;
+    }
+    .form-container form{
+        padding: 1rem;
+    }
+    .top-form h2{
+        font-size: 1.5rem;
+    }
+}
