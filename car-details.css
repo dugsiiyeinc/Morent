@@ -181,25 +181,6 @@ header {
   cursor: pointer;
 }
 
-/* responsive design */
-/* tablets and laptops */
-@media (max-width: 850px) {
-  .pc-device {
-    display: none;
-  }
-
-  .nav-m-device {
-    display: flex;
-  }
-
-  .search-bar-m-device .search-m-device {
-    width: 85%;
-  }
-
-  header {
-    padding: 0;
-  }
-}
 /* ===================Main Styling ========================= */
 
 main {
@@ -340,7 +321,7 @@ main {
     margin-top: 1rem;
     max-width: 497px;
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -711,7 +692,7 @@ main {
 /* Footer */
 footer{
     background-color: #FFFFFF;
-    padding:2rem;
+    padding: 2rem;
 }
 .footer-section{
     display: flex;
@@ -799,16 +780,43 @@ footer{
     color: #102E7A;
     transition: 0.3s ease-in-out;
 }
-
-
 /* ====================================Media Querys For Responsive========================== */
-
+/* Responsive design */ 
+/* tablets and laptops */
 @media (max-width: 850px) {
-    .left {
-        display: none;
+    .pc-device {
+      display: none;
     }
 
+    .nav-m-device {
+      display: flex;
+    }
+
+    .search-bar-m-device .search-m-device {
+      width: 85%;
+    }
+
+    header {
+      padding: 0;
+    }
+     .left {
+          display: none;
+      }
+
     .right {
-        padding: 2rem;
+          padding: 2rem;
+    }
+}
+
+@media (max-width: 767px){
+    .cars-view{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .car-box{
+        max-width: 100%;
+    }
+    .car-img img{
+        width: 13rem;
     }
 }
