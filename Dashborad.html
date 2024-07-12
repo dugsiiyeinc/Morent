@@ -1,92 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morent - Car Rental</title>
-    <link rel="stylesheet" href="Dashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="Dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="nav-bar pc-device container">
-            <div class="right-nav-bar">
-            <div class="logo">
-                <h1 class="logo">MORENT</h1>
-            </div>
-        <div class="search-bar">
+      <nav class="nav-bar pc-device container">
+        <div class="right-nav-bar">
+          <div class="logo">
+            <h1 class="logo">MORENT</h1>
+          </div>
+          <div class="search-bar">
             <div class="search">
-            <img src="/icons/search-bar.png" alt="search-bar-icon" class="search-icon">
-            <input type="text" placeholder="Search something here">
+              <img
+                src="/icons/search-bar.png"
+                alt="search-bar-icon"
+                class="search-icon"
+              />
+              <input type="text" placeholder="Search something here" />
             </div>
-            <img src="/icons/filter.png" alt="filter-icon" class="filter-pc">
-        </div>
+            <img src="/icons/filter.png" alt="filter-icon" class="filter-pc" />
+          </div>
         </div>
 
         <div class="left-nav-bar">
-            <i class="fa-solid fa-heart"></i>
-            <div class="notivication">
-                <span></span>
-                <i class="fa-solid fa-bell"></i>
-            </div>
-            <i class="fa-solid fa-gear"></i>
-            <div class="profile">
-                <img src="/images/profile-img.png" alt="profile-img" class="profile-pic">
-            </div>
+          <i class="fa-solid fa-heart"></i>
+          <div class="notivication">
+            <span></span>
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <i class="fa-solid fa-gear"></i>
+          <div class="profile">
+            <img
+              src="/images/profile-img.png"
+              alt="profile-img"
+              class="profile-pic"
+            />
+          </div>
         </div>
-         </nav>
-         <!-- mobile device nav-bar -->
-        <nav class="nav-m-device">
-            <div class="logo-p-picture">
-                <i class="fa-solid fa-bars"></i>
-                <img src="/images/profile-img.png" >
-            </div>
-            <h1 class="logo">MORENT</h1>
-            <div class="search-bar-m-device">
-            <div class="search-m-device">
-            <img src="/icons/search-bar.png" alt="search-bar-icon">
-            <input type="text" placeholder="Search something here">
-            </div>
-            <img src="/icons/filter.png" alt="filter-icon" title="filter" class="filter">
-            </div>
-        </nav>
+      </nav>
+      <!-- mobile device nav-bar -->
+      <nav class="nav-m-device">
+        <div class="logo-p-picture">
+          <i class="fa-solid fa-bars"></i>
+          <img src="/images/profile-img.png" />
+        </div>
+        <h1 class="logo">MORENT</h1>
+        <div class="search-bar-m-device">
+          <div class="search-m-device">
+            <img src="/icons/search-bar.png" alt="search-bar-icon" />
+            <input type="text" placeholder="Search something here" />
+          </div>
+          <img
+            src="/icons/filter.png"
+            alt="filter-icon"
+            title="filter"
+            class="filter"
+          />
+        </div>
+      </nav>
     </header>
     <!-- =========================End Header And navbar======================== -->
 
     <main class="container">
-        <!-- =========================Left Section======================== -->
-        <section class="left">
-            <div class="Menu-dash">
-                <h1>M A I N  M E N U</h1>
-                <ul>
-                    <li class="active"><img src="/icons/home.svg" alt=""> Dashboard</li>
-                    <li><img src="icons/car.svg" alt=""> Car Rent</li>
-                    <li><img src="icons/chart.svg" alt=""> Insight</li>
-                    <li><img src="icons/empty-wallet-change.svg" alt=""> Reimburse</li>
-                    <li><img src="icons/message.svg" alt=""> Inbox</li>
-                    <li><img src="icons/calendar.svg" alt=""> Calender</li>
-                </ul>
+      <!-- =========================Left Section======================== -->
+      <section class="left">
+        <div class="Menu-dash">
+          <h1>M A I N M E N U</h1>
+          <ul>
+            <li class="active">
+              <img src="/icons/home.svg" alt="" /> Dashboard
+            </li>
+            <li><img src="icons/car.svg" alt="" /> Car Rent</li>
+            <li><img src="icons/chart.svg" alt="" /> Insight</li>
+            <li>
+              <img src="icons/empty-wallet-change.svg" alt="" /> Reimburse
+            </li>
+            <li><img src="icons/message.svg" alt="" /> Inbox</li>
+            <li><img src="icons/calendar.svg" alt="" /> Calender</li>
+          </ul>
+        </div>
+
+        <div class="Preference">
+          <h1>P R E F E R E N C E S</h1>
+          <ul>
+            <li><img src="/icons/setting.svg" alt="" /> Settings</li>
+            <li><img src="icons/info-circle.svg" alt="" /> Help & Center</li>
+            <li>
+              <img src="icons/briefcase.svg" alt="" />Dark Mode
+              <div class="dark-mode">
+                <div class="sun">
+                  <img src="icons/sun.svg" alt="" />
+                </div>
+                <img src="icons/moon.svg" alt="" class="moon" />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="logout">
+          <p><img src="icons/logout.svg" alt="" />Log Out</p>
+        </div>
+      </section>
+      <!-- =========================End Left SideBar======================== -->
+      <section class="right">
+        <div class="wrapper">
+          <div class="Left-Card">
+            <h1>Details Rental</h1>
+            <div class="card-img">
+              <img src="/images/Maps(1).png" alt="" class="img2" />
+            </div>
+            <div class="car-des">
+              <div class="car-name">
+                <img src="images/Look.png" alt="" />
+                <div class="name">
+                  <h2>Nissan GT - R</h2>
+                  <p>Sport Car</p>
+                </div>
+              </div>
+              <div class="car-info">
+                <p>#9761</p>
+              </div>
             </div>
 
-            <div class="Preference">
-                <h1>P R E F E R E N C E S</h1>
-                <ul>
-                    <li><img src="/icons/setting.svg" alt=""> Settings</li>
-                    <li><img src="icons/info-circle.svg" alt=""> Help & Center</li>
-                    <li><img src="icons/briefcase.svg" alt=""> Dark Mode
-                    <div class="dark-mode">
-                        <div class="sun">
-                            <img src="icons/sun.svg" alt="">
-                        </div>
-                            <img src="icons/moon.svg" alt="" class="moon">
-                    </div>
-                    </li>
-                </ul>
+            <div class="bottom-hero">
+              <div class="pick-up-drop-off">
+                <div class="pick-up drop-off">
+                  <div class="mark-icon">
+                    <i class="fa-solid fa-circle"></i>
+                  </div>
+                  <span>Pick-Up</span>
+                </div>
+
+                <form class="pick-up-form drop-off-form">
+                  <div class="location">
+                    <label for="location">locations</label>
+                    <select name="locations">
+                      <option
+                        value="Select location"
+                        hidden
+                        class="placeholder"
+                      >
+                        Select your city
+                      </option>
+                      <option value="Mogadishu">Mogadishu</option>
+                      <option value="Hargaysa">Hargaysa</option>
+                      <option value="Kismaayo">Kismaayo</option>
+                      <option value="Goroowe">Goroowe</option>
+                      <option value="Boosaaso">Boosaaso</option>
+                      <option value="Gaalkacyo">Gaalkacyo</option>
+                      <option value="Marka">Marka</option>
+                      <option value="Afgooye">Afgooye</option>
+                      <option value="Boorama">Boorama</option>
+                      <option value="Jamaame">Jamaame</option>
+                      <option value="Beledwayne">Beledwayne</option>
+                      <option value="jowhar">Jowhar</option>
+                    </select>
+                  </div>
+
+                  <div class="location date">
+                    <label for="Date">Date</label>
+                    <input type="date" class="date-input" />
+                  </div>
+
+                  <div class="location date time">
+                    <label for="Time">Time</label>
+                    <input type="time" />
+                  </div>
+                </form>
+              </div>
+
+              <!-- Drop Off -->
+              <div class="pick-up-drop-off">
+                <div class="pick-up drop-off">
+                  <div class="mark-icon mark-drop-off">
+                    <i class="fa-solid fa-circle"></i>
+                  </div>
+                  <span>Drop - Off</span>
+                </div>
+
+                <form class="pick-up-form drop-off-form">
+                  <div class="location">
+                    <label for="location">locations</label>
+                    <select name="locations">
+                      <option
+                        value="Select location"
+                        hidden
+                        class="placeholder"
+                      >
+                        Select your city
+                      </option>
+                      <option value="Mogadishu">Mogadishu</option>
+                      <option value="Hargaysa">Hargaysa</option>
+                      <option value="Kismaayo">Kismaayo</option>
+                      <option value="Goroowe">Goroowe</option>
+                      <option value="Boosaaso">Boosaaso</option>
+                      <option value="Gaalkacyo">Gaalkacyo</option>
+                      <option value="Marka">Marka</option>
+                      <option value="Afgooye">Afgooye</option>
+                      <option value="Boorama">Boorama</option>
+                      <option value="Jamaame">Jamaame</option>
+                      <option value="Beledwayne">Beledwayne</option>
+                      <option value="jowhar">Jowhar</option>
+                    </select>
+                  </div>
+
+                  <div class="location date">
+                    <label for="Date">Date</label>
+                    <input type="date" class="date-input" />
+                  </div>
+
+                  <div class="location date time">
+                    <label for="Time">Time</label>
+                    <input type="time" />
+                  </div>
+                </form>
+              </div>
             </div>
-        <div class="logout">
-            <p><img src="icons/logout.svg" alt="">Log Out</p>
+            <div class="total-prc">
+              <div class="total-flex">
+                <h1>Total Rental Price</h1>
+                <p>Overall price and includes rental discount</p>
+              </div>
+              <h1>$80.00</h1>
+            </div>
+          </div>
+          <!-- ==================End Left Card=================== -->
+
+          <!-- ==================Right card================== -->
+          <div class="right-card">
+            <div class="top-right-card">
+              <div class="top-flex-1">
+                <h1>Top 5 Car Rental</h1>
+                <img src="icons/more.svg" alt="" />
+              </div>
+
+              <div class="Center-right-card">
+                <div class="chart">
+                  <img src="images/Chart.png" alt="" class="chart-img" />
+                  <div class="chart-text">
+                    <h2>72,030</h2>
+                    <p>Rental Car</p>
+                  </div>
+                </div>
+                <div class="chart-des">
+                  <ul class="chart-list">
+                    <li>Sport Car <span>17,439</span></li>
+                    <li>SUV <span>9,478</span></li>
+                    <li>Coupe <span>18,197</span></li>
+                    <li>Hatchback <span>12,510</span></li>
+                    <li>MPV <span>14,406</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bottom-right-card">
+              <div class="top-bottom-right-card">
+                <h1>Recent Transaction</h1>
+                <a href="">View All</a>
+              </div>
+              <div class="transaction-cards">
+                <!-- ===============Transaction 1============ -->
+                <div class="cars-2">
+                  <div class="car-img-2">
+                    <img src="images/New MG ZS.png" alt="" />
+                    <div class="name">
+                      <h2>Nissan GT - R</h2>
+                      <p>Sport Car</p>
+                    </div>
+                  </div>
+                  <div class="car-info-2">
+                    <span>20 July</span>
+                    <p>$80.00</p>
+                  </div>
+                </div>
+
+                <!-- ===============Transaction 2============ -->
+                <div class="cars-2">
+                  <div class="car-img-2">
+                    <img src="images/Car1.png" alt="" />
+                    <div class="name">
+                      <h2>Koegnigsegg</h2>
+                      <p>Sport Car</p>
+                    </div>
+                  </div>
+                  <div class="car-info-2">
+                    <span>19 July</span>
+                    <p>$99.00</p>
+                  </div>
+                </div>
+
+                <!-- ===============Transaction 3============ -->
+                <div class="cars-2">
+                  <div class="car-img-2">
+                    <img src="images/Rolls-Royce.png" alt="" />
+                    <div class="name">
+                      <h2>Rolls - Royce</h2>
+                      <p>Sport Car</p>
+                    </div>
+                  </div>
+                  <div class="car-info-2">
+                    <span>18 July</span>
+                    <p>$96.00</p>
+                  </div>
+                </div>
+
+                <!-- ===============Transaction 4============ -->
+                <div class="cars-2">
+                  <div class="car-img-2">
+                    <img src="images/All New Rush.png" alt="" />
+                    <div class="name">
+                      <h2>CR - V</h2>
+                      <p>SUV</p>
+                    </div>
+                  </div>
+                  <div class="car-info-2">
+                    <span>17 July</span>
+                    <p>$80.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </section>
-        <!-- =========================End Left Section======================== -->
-</body>
+      </section>
+    </main>
+  </body>
 </html>
