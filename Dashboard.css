@@ -28,7 +28,7 @@ img {
 
 header {
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 1rem 4rem;
   border-bottom: 1px solid rgba(195, 212, 233, 0.4);
 }
 
@@ -60,7 +60,7 @@ header {
   justify-content: space-between;
   border: 1px solid rgba(195, 212, 233, 0.4);
   border-radius: 70px;
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .search-bar .search {
@@ -174,7 +174,7 @@ header {
   color: #596780;
 }
 
-.search-bar-m-device .filter {
+.search-bar-m-device a {
   border: 2px solid rgba(195, 212, 233, 0.4);
   padding: 1rem;
   border-radius: 10px;
