@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morent</title>
+    <link rel="stylesheet" href="aamiin.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MORENT</div>
+        <div class="header-icons">
+            <span class="icon">🔍</span>
+            <span class="icon">🔔</span>
+            <span class="icon">👤</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-wrapper">
+        <div class="wrapper">
+        <section class="billing-info">
+            <h2>Billing Info</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" placeholder="Phone number">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Address">
+                </div>
+                <div class="form-group">
+                    <label for="city">Town/City</label>
+                    <input type="text" id="city" placeholder="Town or city">
+                </div>
+            </form>
+        </section>
+
+        <section class="rental-info">
+            <h2>Rental Info</h2>
+            <form>
+                <div class="form-group">
+                    <label for="pickup-location">Pick-Up Location</label>
+                    <input type="text" id="pickup-location" placeholder="Select your city">
+                </div>
+                <div class="form-group">
+                    <label for="pickup-date">Date</label>
+                    <input type="date" id="pickup-date">
+                </div>
+                <div class="form-group">
+                    <label for="pickup-time">Time</label>
+                    <input type="time" id="pickup-time">
+                </div>
+            </form>
+        </section>
+
+        <section class="payment-method">
+            <h2>Payment Method</h2>
+            <form>
+                <div class="form-group">
+                    <input type="radio" id="credit-card" name="payment-method" checked>
+                    <label for="credit-card">Credit Card</label>
+                    <img src="Visa.png" alt="Visa">
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="paypal" name="payment-method">
+                    <label for="paypal">PayPal</label>
+                    <img src="PayPal.png" alt="PayPal">
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="bitcoin" name="payment-method">
+                    <label for="bitcoin">Bitcoin</label>
+                    <img src="Bitcoin.png" alt="Bitcoin">
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="Card number">
+                </div>
+                <div class="form-group">
+                    <label for="expiration-date">Expiration Date</label>
+                    <input type="text" id="expiration-date" placeholder="MM/YY">
+                </div>
+                <div class="form-group">
+                    <label for="card-holder">Card Holder</label>
+                    <input type="text" id="card-holder" placeholder="Cardholder name">
+                </div>
+                <div class="form-group">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" placeholder="CVC">
+                </div>
+            </form>
+        </section>
+
+        <section class="confirmation">
+            <h2>Confirmation</h2>
+            <form>
+                <div class="form-group">
+                    <input type="checkbox" id="marketing">
+                    <label for="marketing">I agree with sending Marketing and newsletter emails. No spam, promised!</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree with our terms and conditions and privacy policy.</label>
+                </div>
+                <button type="submit">Rent Now</button>
+            </form>
+        </section>
+    </div>
+    <section class="rental-main">
+        <section class="rental-summary">
+            <h2>Rental Summary</h2>
+            <div class="car-info">
+                <img src="Look.png" alt="Nissan GT-R">
+                <h3>Nissan GT-R</h3>
+                <p>⭐ 4.8 (Review)</p>
+            </div>
+            <div class="price-info">
+                <p>Subtotal: $80.00</p>
+                <p>Discount: $0</p>
+            </div>
+            <div class="total-price">
+                <p>Total Rental Price: <strong>$80.00</strong></p>
+            </div>
+        </section>
+    </div>
+</div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">MORENT</div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">Partnership</a></li>
+                        <li><a href="#">Business Relation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Invite a friend</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Socials</h3>
+                    <ul>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>©2024 MORENT. All rights reserved</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
