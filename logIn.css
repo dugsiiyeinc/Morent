@@ -94,7 +94,7 @@ form .top-form{
 }
 
 
-.input-label .input-icon .fa-eye-slash{
+.input-label .input-icon .fa-eye-slash, .fa-eye{
     position: absolute;
     right: 12px;
     font-size: 1.1rem;

@@ -22,7 +22,7 @@
                     <label for="name">First Name</label>
                     <div class="input-icon">
                     <i class="fa-solid fa-user-plus"></i>
-                    <input type="text" name="name" id="name" placeholder="Enter your first name" required>
+                    <input type="text" placeholder="Enter your first name" required>
                     </div>
                     </div>
                     <!-- last-name -->
@@ -30,7 +30,7 @@
                     <label for="name">Last Name</label>
                     <div class="input-icon">
                     <i class="fa-solid fa-user-plus"></i>
-                    <input type="text" name="name" id="name" placeholder="Enter your Last name">
+                    <input type="text" placeholder="Enter your Last name">
                     </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                     <label for="name">Username</label>
                    <div class="input-icon">
                     <i class="fa-regular fa-circle-user"></i>
-                    <input type="text" name="name" id="name" placeholder="Enter your Username" required>
+                    <input type="text" placeholder="Enter your Username" required>
                     </div>
                     </div>
                     <!-- email -->
@@ -48,7 +48,7 @@
                     <label for="name">Email</label>
                    <div class="input-icon">
                     <i class="fa-regular far fa-envelope"></i>
-                    <input type="email" name="name" id="name" placeholder="Enter your email" required>
+                    <input type="email" placeholder="Enter your email" required>
                     </div>
                     </div>
 
@@ -57,8 +57,8 @@
                     <label for="name">Password</label>
                    <div class="input-icon">
                     <i class="fa-solid fa-lock"></i>
-                    <i class="fa-regular fa-eye-slash"></i>
-                    <input type="password" name="name" id="name" placeholder="Enter your password" required>
+                    <i class="fa-regular fa-eye-slash" id="show-hide"></i>
+                    <input type="password"  id="pass-input" placeholder="Enter your password" required>
                     </div>
                     <span class="password-info">Minimum length is 8 characters</span>
                     </div>
@@ -87,5 +87,23 @@
             </form>
         </div>
      </div>
+
+      <script>
+    let passwordInput = document.getElementById('pass-input');
+    let showHideIcon = document.getElementById('show-hide');
+    // Show and hide password feature
+    showHideIcon.addEventListener('click', () => {
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            showHideIcon.classList.remove('fa-eye-slash');
+            showHideIcon.classList.add('fa-eye');
+        } else {
+            passwordInput.type = 'password';
+            showHideIcon.classList.remove('fa-eye');
+            showHideIcon.classList.add('fa-eye-slash');
+        }
+    });
+
+    </script>
 </body>
 </html>
