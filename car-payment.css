@@ -39,7 +39,7 @@ header{
     text-decoration: none;
     color: #3563E9;
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 .right-nav-bar .search-bar{
     width: 100%;
@@ -169,7 +169,6 @@ header{
 }
 .payment input, select{
     width: 100%;
-    outline: none;
     border: none;
     padding: 1rem 1.5rem;
     color: #596780;
@@ -182,6 +181,9 @@ header{
     color: #90A3BF;
     font-weight: 500;
     font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.payment input:hover{
+    /* outline: 1px solid #1A202C; */
 }
 .payment-box-info{
     display: flex;

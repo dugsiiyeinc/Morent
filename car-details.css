@@ -11,6 +11,7 @@
 }
 
 body {
+  background-color: #f6f7f9;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -19,7 +20,7 @@ img {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   max-width: 1536px;
   margin-inline: auto;
@@ -27,7 +28,7 @@ img {
 
 header {
   background-color: #ffffff;
-  padding: 1rem 4rem;
+  padding: 1rem;
   border-bottom: 1px solid rgba(195, 212, 233, 0.4);
 }
 
@@ -180,12 +181,7 @@ header {
   color: #596780;
   cursor: pointer;
 }
-
 /* ===================Main Styling ========================= */
-
-main {
-  background-color: #f6f7f9;
-}
 
 .right {
   width: 100%;
@@ -260,7 +256,10 @@ main {
   justify-content: center;
 }
 
-
+.top-righ-card > .top-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .top-righ-card > .top-flex > h1 {
   color: rgba(26, 32, 44, 1);
@@ -349,6 +348,15 @@ main {
   font-weight: 550;
   color: #90a3bf;
 }
+.rental-car {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  background-color: #3563e9;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
 }
 .rental-car:hover {
   background-color: #102e7a;
@@ -360,14 +368,21 @@ main {
 /* ==============================Reviews============================== */
 .Reviews {
   background-color: #ffffff;
-  margin-top: 2rem;
+  margin: 2rem 0rem;
   border-radius: 10px;
-  padding: 1.7rem;
-  margin-bottom: 2rem;
+  padding: 1rem;
 }
 .reviews-person {
-  max-width: 100%;
-}
+    margin-top: 1rem;
+    max-width: 400px;
+    height: 300px; 
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+  }
 .reviews-flex {
   max-width: 100%;
   display: flex;
@@ -399,6 +414,7 @@ main {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
   align-items: center;
   justify-content: space-between;
 }
@@ -434,11 +450,12 @@ main {
   letter-spacing: -2%;
 }
 .person-description {
-  margin-top: 1.8rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 1.2rem;
+  color: rgba(89, 103, 128, 0.9);
+  font-size: 1rem;
+  line-height: 1.5rem;
   max-width: 350px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -613,6 +630,9 @@ i {
 /* ===============================Footer Section ===================== */
 
 /* Footer */
+footer {
+  background-color: #ffffff;
+  padding: 2rem;
 }
 .footer-section {
   display: flex;
@@ -700,11 +720,41 @@ i {
   color: #102e7a;
   transition: 0.3s ease-in-out;
 }
+
 /* ====================================Media Querys For Responsive========================== */
-/* Responsive design */ 
+
+/* responsive design */
 /* tablets and laptops */
 @media (max-width: 850px) {
-    .pc-device {
-      display: none;
-    }
+  .container{
+    width: 100%;
   }
+  .pc-device {
+    display: none;
+  }
+
+  .nav-m-device {
+    display: flex;
+  }
+
+  .search-bar-m-device .search-m-device {
+    width: 85%;
+  }
+
+  header {
+    padding: 0;
+  }
+  .left {
+    display: none;
+  }
+  .car-box{
+    max-width: 100%;
+  }
+  .car-img img{
+    width: 13rem;
+  }
+
+  .right {
+    padding: 2rem;
+  }
+}
