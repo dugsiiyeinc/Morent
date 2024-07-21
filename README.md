@@ -1,64 +1,128 @@
-# Car Rent Website
+# MORENT Car Rental Website 🚗
 
-Welcome to our Car Rent Website project! This website is designed to offer a seamless car rental experience, featuring various sections such as Home, Category Car Page, Detail Car Rental Page, Payment Car Rental Page, and Dashboard Admin Page. Our aim is to create an intuitive and user-friendly platform for customers to browse and rent cars effortlessly.
+Welcome to the MORENT Car Rental Website project! This repository contains a web-based application designed to provide users with a seamless car rental experience. Built using HTML, CSS, and JavaScript, this site offers a user-friendly interface for finding, booking, and managing car rentals.
 
-## Project Overview
-
+# Team Members
 This project is developed by Group 2 of Group B, consisting of the following members:
 
 1. Mohamed Abdirahim Mohamed  
 2. Ali Alas
 3. Najaad Ahmed Ismail
 
-## Website Sections
+## Table of Contents 📋
 
-1. **Home**: The landing page that provides an overview of our website and its features.
-2. **Category Car Page**: A page where users can browse different categories of cars available for rent.
-3. **Detail Car Rental Page**: A detailed page for each car listing, providing information on car specifications, rental rates, and availability.
-4. **Payment Car Rental Page**: The payment processing page where users can securely complete their rental transactions.
-5. **Dashboard Admin Page**: A backend page for admins to manage car listings, rental orders, and user information.
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Features
+## Features ✨
 
-- Browse cars by category
-- View detailed car information and rental rates
-- Secure payment processing for car rentals
-- Admin dashboard for managing listings and orders
-- User-friendly interface and seamless navigation
+### 1. Home Page 🏠
 
-## FAQ
+- **Navigation Bar:** Logo, search bar, site links.
+- **Hero Section:** Dynamic image, call-to-action.
+- **Cars Section:** Popular and recommended cars.
+- **Plans Section:** Economy, Standard, Premium packages.
+- **Customer Testimonials:** User feedback.
+- **Pickup & Drop-off:** Location options.
+- **Meet Our Team:** Team introductions.
+- **Footer Section:** Links, contact info.
 
-**Question 1: How can I browse cars on the website?**
+### 2. Category Car Page 🚗
 
-- Visit the "Category Car Page" to explore our range of cars categorized for easy browsing.
+- **Search by Type, Capacity, Price Range, Pickup & Drop-off.**
 
-**Question 2: How can I view detailed information about a car?**
+### 3. Car Details Page 📄
 
-- Click on a car listing on the "Category Car Page" to be directed to the "Detail Car Rental Page."
+- **Photos:** Interior & exterior.
+- **Car Rates:** User feedback.
 
-**Question 3: How can I complete a rental transaction?**
+### 4. Car Payment Page 💳
 
-- Use the "Payment Car Rental Page" to securely complete your rental transaction.
+- **Billing & Rental Info:** Pickup & drop-off locations.
+- **Payment Method, Confirmation.**
+- **Rental Summary:** Car image, rate stars, subtotal, tax, promo code, total price.
+
+### 5. Signup & Login Page 🔐
+
+- **Account creation and user login.**
+
+### 6. Admin Dashboard 🛠
+
+- **Top 5 Car Rentals, Recent Transactions.**
+- **Sidebar:** Inbox, Calendar, Insights, Settings, Dark Mode.
+- **Logout Button, Rental Car Location.**
 
 ## Color Reference
 
 | Color             | Hex       |
 |-------------------|-----------|
-| Primary Color     | #0A196F   |
-| Secondary Color   | #131825   |
+| Primary Color     | #3563E9   |
+| Secondary Color   | #1A202C   |
 | Background Color  | #FFFFFF   |
-| Text Color        | #DCF3FF   |
+| Text Color        | #596780   |
 
-## Acknowledgements
+## Deployment 🌐
 
-Will be updated soon.
+The website is deployed using Vercel. To deploy your own version, follow these steps:
 
-## Tech Used
+1. **Install Vercel CLI:**
+    \`\`\`bash
+    npm install -g vercel
+    \`\`\`
 
-- Frontend: HTML, CSS, JavaScript
+2. **Login to Vercel:**
+    \`\`\`bash
+    vercel login
+    \`\`\`
 
-## Deployment
+3. **Deploy:**
+    \`\`\`bash
+    vercel
+    \`\`\`
 
-To deploy this project, follow these steps:
+## Demo 🎥
 
-(At this time, this project is not deployed. Instructions for deployment will be provided in the future.)
+Check out a live demo of the project https://car-rent-pink-nine.vercel.app.
+
+## Installation 💻
+
+To get a local copy up and running, follow these steps:
+
+1. **Clone the repository:**
+    \`\`\`bash
+    git clone <https://github.com/dugsiiyeinc/Car-Rent-Website.git>
+    \`\`\`
+
+2. **Navigate to the project directory:**
+    \`\`\`bash
+    cd morent-car-rental
+    \`\`\`
+
+3. **Open \`index.html\` in your browser to view the website locally.**
+
+## Usage 🚀
+
+To use the website, simply open \`index.html\` in a web browser. You can navigate through the different sections, search for cars, view details, book rentals, and manage your account.
+
+## Contributing 🤝
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+1. Fork the Project
+2. Create your Feature Branch (\`git checkout -b feature/AmazingFeature\`)
+3. Commit your Changes (\`git commit -m 'Add some AmazingFeature'\`)
+4. Push to the Branch (\`git push origin feature/AmazingFeature\`)
+5. Open a Pull Request
+
+## Technologies Used 🛠
+
+ Frontend: HTML, CSS, JavaScript
+
+## License 📜
+
+Distributed under the Dugsiiye License. See \`LICENSE\` for more information.
